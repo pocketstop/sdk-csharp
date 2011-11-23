@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>Pocketstop</id>
+		<version>0.1</version>
+		<authors>Pocketstop</authors>
+		<description>Pocketstop REST API helper library</description>
+		<language>en-US</language>
+		<projectUrl>http://github.com/pocketstop/sdk-csharp</projectUrl>
+		<iconUrl>http://www.pocketstop.com/images/pocketstop_hires_bug.jpg</iconUrl>
+		<licenseUrl>https://github.com/pocketstop/sdk-csharp/blob/master/LICENSE.txt</licenseUrl>
+		<tags>Pocketstop REST SMS Mobile Social CRM</tags>
+		<dependencies>
+			<dependency id="RestSharp" />
+		</dependencies>
+		<releaseNotes>
+			
+		</releaseNotes>
+	</metadata>
+</package>
