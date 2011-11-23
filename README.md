@@ -1,6 +1,6 @@
 # Pocketstop REST API Library for .NET
 
-Pocketstop provides a simple HTTP-based API for interacting with the Pocketstop Platform. Learn more at [http://www.pocketstop.com][0]
+Pocketstop provides a simple HTTP-based API for interacting with the Pocketstop Social CRM Platform. Learn more at [http://www.pocketstop.com][0]
 
 ### Installation
 
