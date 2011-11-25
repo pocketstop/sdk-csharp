@@ -9,7 +9,7 @@ namespace Pocketstop
 	public class PocketstopListBase : PocketstopBase
 	{
 		/// <summary>
-		/// The current page number. Zero-indexed, so the first page is 0.
+		/// The current page number. First page is 1.
 		/// </summary>
 		public int Page { get; set; }
 		/// <summary>

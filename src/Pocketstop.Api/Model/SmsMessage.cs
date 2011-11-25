@@ -3,7 +3,7 @@ using System;
 namespace Pocketstop
 {
 	/// <summary>
-	/// An SMSMessage instance resource represents a single Twilio SMSMessage.
+	/// An SmsMessage instance resource represents a single Pocketstop SmsMessage.
 	/// </summary>
 	public class SmsMessage : PocketstopBase
 	{
@@ -25,11 +25,11 @@ namespace Pocketstop
 		/// </summary>
 		public string AccountId { get; set; }
 		/// <summary>
-		/// The phone number that initiated the message in E.164 format. For incoming messages, this will be the remote phone. For outgoing messages, this will be one of your Twilio phone numbers.
+		/// The phone number that initiated the message in E.164 format. For incoming messages, this will be the remote phone. For outgoing messages, this will be one of your Pocketstop phone numbers or short codes.
 		/// </summary>
 		public string From { get; set; }
 		/// <summary>
-		/// The phone number that received the message in E.164 format. For incoming messages, this will be one of your Twilio phone numbers. For outgoing messages, this will be the remote phone.
+		/// The phone number that received the message in E.164 format. For incoming messages, this will be one of your Pocketstop phone numbers or short codes. For outgoing messages, this will be the remote phone.
 		/// </summary>
 		public string To { get; set; }
 		/// <summary>
@@ -41,11 +41,11 @@ namespace Pocketstop
 		/// </summary>
 		public string Status { get; set; }
 		/// <summary>
-		/// The direction of this SMS message. incoming for incoming messages, outbound-api for messages initiated via the REST API, outbound-call for messages initiated during a call or outbound-reply for messages initiated in response to an incoming SMS.
+		/// The direction of this SMS message. incoming for incoming messages, outbound-api for messages initiated via the REST API or outbound-reply for messages initiated in response to an incoming SMS.
 		/// </summary>
 		public string Direction { get; set; }
 		/// <summary>
-		/// The version of the Twilio API used to process the SMS message.
+		/// The version of the Pocketstop API used to process the SMS message.
 		/// </summary>
 		public string ApiVersion { get; set; }
 	}
