@@ -12,7 +12,7 @@ namespace Pocketstop
 		/// </summary>
 		public RestException RestException { get; set; }
 		/// <summary>
-		/// The URI for this resource, relative to https://www.pocketstop.com/api/
+		/// The URI for this resource, relative to https://api.pocketstop.com/
 		/// </summary>
 		public string Uri { get; set; }
 	}

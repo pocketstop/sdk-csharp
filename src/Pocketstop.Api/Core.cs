@@ -13,7 +13,7 @@ namespace Pocketstop
 		/// </summary>
 		public string ApiVersion { get; set; }
 		/// <summary>
-		/// Base URL of API (defaults to https://www.pocketstop.com/api/)
+		/// Base URL of API (defaults to https://api.pocketstop.com/)
 		/// </summary>
 		public string BaseUrl { get; set; }
 		private string AccountId { get; set; }
@@ -29,7 +29,7 @@ namespace Pocketstop
 		public PocketstopRestClient(string accountId, string apiKey)
 		{
 			ApiVersion = "v1";
-			BaseUrl = "https://www.pocketstop.com/api/";
+			BaseUrl = "https://api.pocketstop.com/";
 			AccountId = accountId;
 			ApiKey = apiKey;
 
