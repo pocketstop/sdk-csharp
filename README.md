@@ -14,6 +14,6 @@ Install REST API wrapper:
 
     using Pocketstop;
     var pocketstop = new PocketstopRestClient("accountId", "apiKey");
-    var msg = pocketstop.SendSmsMessage("+15551112222", "+15553334444", "Can you believe it's this easy to send an SMS?!");
+    dynamic msg = pocketstop.SendSmsMessage("15551112222", "15553334444", "Can you believe it's this easy to send an SMS?!");
 
 [0]: http://www.Pocketstop.com
