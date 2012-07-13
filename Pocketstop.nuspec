@@ -1,20 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package>
-	<metadata>
-		<id>Pocketstop</id>
-		<version>0.1.1</version>
-		<authors>Pocketstop</authors>
-		<description>Pocketstop REST API helper library</description>
-		<language>en-US</language>
-		<projectUrl>http://github.com/pocketstop/sdk-csharp</projectUrl>
-		<iconUrl>http://www.pocketstop.com/images/pocketstop_hires_bug.jpg</iconUrl>
-		<licenseUrl>https://github.com/pocketstop/sdk-csharp/blob/master/LICENSE.txt</licenseUrl>
-		<tags>Pocketstop REST SMS Mobile Social CRM</tags>
-		<dependencies>
-			<dependency id="RestSharp" />
-		</dependencies>
-		<releaseNotes>
-			
-		</releaseNotes>
-	</metadata>
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>0.1.6</version>
+    <authors>Pocketstop</authors>
+    <owners>Pocketstop</owners>
+    <licenseUrl>https://github.com/pocketstop/sdk-csharp/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>http://github.com/pocketstop/sdk-csharp</projectUrl>
+    <iconUrl>http://az31961.vo.msecnd.net/assets/common/public/images/pocketstop-bug-150x150.png</iconUrl>
+    <dependencies>
+      <dependency id="RestSharp" version="102.5.0.0" />
+      <dependency id="JsonFx" version="2.0.1106.2610" />
+    </dependencies>
+    <id>Pocketstop</id>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pocketstop REST API helper library</description>
+    <releaseNotes />
+    <language>en-US</language>
+    <tags>Pocketstop REST SMS Mobile Social CRM</tags>
+  </metadata>
 </package>

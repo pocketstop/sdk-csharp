@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Pocketstop.Infrastructure;
 using RestSharp;
 
 namespace Pocketstop
@@ -38,10 +39,14 @@ namespace Pocketstop
 			var assemblyName = new AssemblyName(assembly.FullName);
 			var version = assemblyName.Version;
 
-			_client = new RestClient();
-			_client.UserAgent = "pocketstop-sdk-csharp/" + version;
-			_client.Authenticator = new HttpBasicAuthenticator(AccountId, ApiKey);
-			_client.BaseUrl = string.Format("{0}{1}", BaseUrl, ApiVersion);
+			_client = new RestClient
+			          	{
+			          		UserAgent = "pocketstop-sdk-csharp/" + version,
+			          		Authenticator = new HttpBasicAuthenticator(AccountId, ApiKey),
+			          		BaseUrl = string.Format("{0}{1}", BaseUrl, ApiVersion)
+			          	};
+
+			_client.AddHandler("application/json", new JsonFxDeserializer());
 		}
 
 #if FRAMEWORK
@@ -52,6 +57,7 @@ namespace Pocketstop
 		/// <param name="request">The RestRequest to execute (will use client credentials)</param>
 		public T Execute<T>(RestRequest request) where T : new()
 		{
+			request.AddHeader("Accept", "application/json");
 			request.OnBeforeDeserialization = (resp) =>
 			{
 				// for individual resources when there's an error to make
@@ -77,22 +83,5 @@ namespace Pocketstop
 			return _client.Execute(request);
 		}
 #endif
-
-		private string GetParameterNameWithEquality(ComparisonType? comparisonType, string parameterName)
-		{
-			if (comparisonType.HasValue)
-			{
-				switch (comparisonType)
-				{
-					case ComparisonType.GreaterThanOrEqualTo:
-						parameterName += ">";
-						break;
-					case ComparisonType.LessThanOrEqualTo:
-						parameterName += "<";
-						break;
-				}
-			}
-			return parameterName;
-		}
 	}
 }

@@ -12,7 +12,7 @@ namespace Pocketstop
 		/// <param name="from">The phone number to send the message from. Must be a Pocketstop-provided short code or authorized local (not toll-free) number.</param>
 		/// <param name="to">The phone number to send the message to.</param>
 		/// <param name="body">The message to send. Must be 160 characters or less.</param>
-		public SmsMessage SendSmsMessage(string from, string to, string body)
+		public dynamic SendSmsMessage(string from, string to, string body)
 		{
 			return SendSmsMessage(from, to, body, string.Empty);
 		}
@@ -25,7 +25,7 @@ namespace Pocketstop
 		/// <param name="to">The phone number to send the message to.</param>
 		/// <param name="body">The message to send. Must be 160 characters or less.</param>
 		/// <param name="statusCallback">A URL that Pocketstop will POST to when your message is processed. Pocketstop will POST the SmsSid as well as SmsStatus=sent or SmsStatus=failed</param>
-		private SmsMessage SendSmsMessage(string from, string to, string body, string statusCallback)
+		private dynamic SendSmsMessage(string from, string to, string body, string statusCallback)
 		{
 			Validate.IsValidLength(body, 160);
 			Require.Argument("from", from);
@@ -45,7 +45,7 @@ namespace Pocketstop
 			request.AddParameter("To", to);
 			request.AddParameter("Body", body);
 
-			return Execute<SmsMessage>(request);
+			return Execute<dynamic>(request);
 		}
 	}
 }
