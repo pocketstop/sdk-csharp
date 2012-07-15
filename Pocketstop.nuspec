@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>0.1.6</version>
+    <version>0.2.1</version>
     <authors>Pocketstop</authors>
     <owners>Pocketstop</owners>
     <licenseUrl>https://github.com/pocketstop/sdk-csharp/blob/master/LICENSE.txt</licenseUrl>
@@ -16,6 +16,6 @@
     <description>Pocketstop REST API helper library</description>
     <releaseNotes />
     <language>en-US</language>
-    <tags>Pocketstop REST SMS Mobile Social CRM</tags>
+    <tags>Pocketstop REST SMS Mobile Social CRM QRCode</tags>
   </metadata>
 </package>

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QRCode.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="Extensions\ExpandoExtensions.cs" />
     <Compile Include="Infrastructure\JsonFxDeserializer.cs" />
