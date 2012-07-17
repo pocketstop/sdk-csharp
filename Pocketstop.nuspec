@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <authors>Pocketstop</authors>
     <owners>Pocketstop</owners>
     <licenseUrl>https://github.com/pocketstop/sdk-csharp/blob/master/LICENSE.txt</licenseUrl>

@@ -60,6 +60,9 @@
     <Compile Include="..\Pocketstop.Api\Properties\AssemblyInfo.cs">
       <Link>AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="..\Pocketstop.Api\QRCode.cs">
+      <Link>QRCode.cs</Link>
+    </Compile>
     <Compile Include="..\Pocketstop.Api\Sms.cs">
       <Link>Sms.cs</Link>
     </Compile>
